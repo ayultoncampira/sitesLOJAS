@@ -1,0 +1,8 @@
+{
+  "name": "flavinha-store-cloudflare-build",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rm -rf app dist && mkdir -p app && unzip -q flavinha-store.zip -d app && cd app && npm install --legacy-peer-deps && npm run build && cp -r dist ../dist"
+  }
+}
